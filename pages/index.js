@@ -1,9 +1,16 @@
 import Link from 'next/link'
+import Head from 'next/head'
+
 import styles from '../styles/Home.module.css'
 
 
 export default function Home() {
   return (
+    <>
+    <Head>
+      <title>Home</title>
+      <meta name="keywords" content="Homepage" />
+    </Head>
     <div>
       <h1 className={styles.title}>Home page</h1>
 
@@ -14,5 +21,6 @@ export default function Home() {
 
       <Link href="/ninjas"><a className={styles.btn}>Ninja Listing</a></Link>
     </div>
+    </>
   )
 }

@@ -1,5 +1,15 @@
+import Head from 'next/head'
+
 const AllNinjas = () => {
-    return ( <h1>All Ninjas</h1> );
+    return ( 
+    <>
+    <Head>
+      <title>Home</title>
+      <meta name="keywords" content="Homepage" />
+    </Head>
+    <h1>All Ninjas</h1> 
+    </>
+    );
 }
  
 export default AllNinjas;
